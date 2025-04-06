@@ -6,12 +6,12 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 16:55:06 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/02 16:57:09 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:21:29 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
+
 #include <unistd.h>
-*/
+
 void	ft_putstr(char *str)
 {
 	while (*str != '\0')
@@ -20,10 +20,9 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-/*
+
 int	main(void)
 {
 	ft_putstr("Hello, World!\n");
 	return (0);
 }
-*/
