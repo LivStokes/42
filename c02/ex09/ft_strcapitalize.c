@@ -1,65 +1,64 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/07 10:02:43 by olstokes          #+#    #+#             */
+/*   Updated: 2025/04/07 16:16:13 by olstokes         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-// Function to convert the first letter of each word to uppercase and others to lowercase
-char *ft_strcapitalize(char *str)
+//#include <unistd.h>
+
+char	*ft_strcapitalize(char *str)
 {
-    int i = 0;
-    int is_new_word = 1;  // Flag to track the start of a word
+	int	i;
+	int	next;
 
-    while (str[i] != '\0')
-    {
-        // If the current character is a letter
-        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
-        {
-            if (is_new_word)  // If it's the first letter of a word
-            {
-                if (str[i] >= 'a' && str[i] <= 'z')  // Convert to uppercase if it's lowercase
-                    str[i] = str[i] - ('a' - 'A');
-                is_new_word = 0;  // Mark that we are inside a word now
-            }
-            else  // If it's not the first letter, make it lowercase
-            {
-                if (str[i] >= 'A' && str[i] <= 'Z')  // Convert to lowercase if it's uppercase
-                    str[i] = str[i] + ('a' - 'A');
-            }
-        }
-        else
-        {
-            is_new_word = 1;  // Mark the next alphanumeric character as the start of a new word
-        }
-        i++;
-    }
-
-    return str;
+	i = 0;
+	next = 1;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		if (next && str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
+		if ((str[i] < '0')
+			|| (str[i] > '9' && str[i] < 'A')
+			|| (str[i] > 'Z' && str[i] < 'a')
+			|| (str[i] > 'z'))
+			next = 1;
+		else
+			next = 0;
+		i++;
+	}
+	return (str);
 }
 
-// Function to output a single character
-void ft_putchar(char c)
+/*void	ft_putstr(char *str)
 {
-    write(1, &c, 1);
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	write(1, str, i);
 }
 
-// Function to output a string
-void ft_putstr(char *str)
+int	main(void)
 {
-    while (*str)
-    {
-        ft_putchar(*str);
-        str++;
-    }
-}
+	char	str1[] = "heLlo wOrld!";
+	char	str2[] = "meow MeOw";
 
-// Main function to demonstrate the ft_strcapitalize function
-int main(int argc, char *argv[])
-{
-    if (argc != 2)
-    {
-        write(1, "usage: ./ft_strcapitalize \"string\"\n", 33);
-        return (1);
-    }
-    
-    ft_putstr(ft_strcapitalize(argv[1]));  // Capitalize and print the input string
-    write(1, "\n", 1);  // Print a newline
-    return (0);
-}
+	ft_putstr(ft_strcapitalize(str1));
+	write(1, "\n", 1);
+	
 
+	ft_putstr(ft_strcapitalize(str2));
+	write(1, "\n", 1);
+
+	return (0);
+}
+*/

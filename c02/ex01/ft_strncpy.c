@@ -6,7 +6,7 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 20:16:20 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/06 10:32:46 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/07 16:02:05 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
-	int	size;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n && src[i] != '\0')
@@ -35,10 +34,10 @@ int	main(void)
 {
 	char src[] = "Hello World!";
 	unsigned int n = 5;
-	char dest[50];
+	char dest[20];
 
 	ft_strncpy(dest, src, n);
-	printf("Copied first 5 int in string: %s\n", dest);
+	printf("%s\n", dest);
 
 	return (0);
 }

@@ -6,11 +6,11 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 10:52:26 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/06 17:20:42 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/07 11:55:38 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
 
 char	*ft_strlowcase(char *str)
 {
@@ -27,7 +27,7 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
-
+/*
 int	main(int argc, char *argv[])
 {
 	int	i;
@@ -47,3 +47,4 @@ int	main(int argc, char *argv[])
 	write(1, "\n", 1);
 	return (0);
 }
+*/
