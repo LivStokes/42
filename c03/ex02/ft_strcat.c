@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/08 15:08:27 by olstokes          #+#    #+#             */
+/*   Updated: 2025/04/08 17:39:43 by olstokes         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 char	*ft_strcat(char *dest, char *src)
@@ -17,13 +29,12 @@ char	*ft_strcat(char *dest, char *src)
 
 int	main(void)
 {
-	char	dest[100];
-	char	src[];
+	char	dest[20];
+	char	src[20];
+	char	*s;
 
 	ft_strcat(dest, src);
-
-	char	*s
-	s	= dest;
+	s = dest;
 	while (*s)
 	{
 		write(1, s, 1);
