@@ -6,11 +6,11 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 15:08:27 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/08 17:39:43 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/08 18:34:17 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -26,11 +26,11 @@ char	*ft_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 int	main(void)
 {
-	char	dest[20];
-	char	src[20];
+	char	dest[20] = "Hello";
+	char	src[20] = "Meow";
 	char	*s;
 
 	ft_strcat(dest, src);
@@ -43,3 +43,4 @@ int	main(void)
 	write(1, "\n", 1);
 	return (0);
 }
+*/
