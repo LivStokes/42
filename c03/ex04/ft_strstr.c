@@ -6,15 +6,17 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 10:21:14 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/08 19:45:28 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:29:23 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
+//#include <string.h>
+
 char	*ft_strstr(char *str, char *to_find)
 {
-	char	*s;//string
-	char	*ss;//substring
+	char	*s;
+	char	*ss;
 
 	if (*to_find == '\0')
 		return (str);
@@ -33,7 +35,7 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
-
+/*
 void	ft_putstr(char *str)
 {
 	while (*str)
@@ -42,8 +44,8 @@ void	ft_putstr(char *str)
 
 int	main(void)
 {
-	char	str[] = "the start";
-	char	to_find[] = "of the end";
+	char	str[30] = "the end of the end";
+	char	to_find[20] = "the start";
 	char	*result;
 
 	result = ft_strstr(str, to_find);
@@ -54,3 +56,4 @@ int	main(void)
 	write(1, "\n", 1);
 	return (0);
 }
+*/

@@ -6,11 +6,12 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 15:08:27 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/08 18:34:17 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:27:08 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <unistd.h>
+//#include <string.h>
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -27,19 +28,21 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 /*
+void	ft_putstr(char *str)
+{
+	while (*str)
+		write(1, str++, 1);
+}
+
 int	main(void)
 {
-	char	dest[20] = "Hello";
-	char	src[20] = "Meow";
-	char	*s;
+	char	dest[20];
+	char	src[20];
 
+	strcpy(dest, "Hello, ");
+	strcpy(src, "World");
 	ft_strcat(dest, src);
-	s = dest;
-	while (*s)
-	{
-		write(1, s, 1);
-		s++;
-	}
+	ft_putstr(dest);
 	write(1, "\n", 1);
 	return (0);
 }

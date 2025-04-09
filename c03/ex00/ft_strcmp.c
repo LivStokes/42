@@ -6,11 +6,12 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 16:47:29 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/07 16:47:32 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:26:09 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <unistd.h>
+
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -22,7 +23,6 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
 /*
 int	main(int argc, char *argv[])
 {

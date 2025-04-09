@@ -6,7 +6,7 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 15:07:14 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/08 17:38:27 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:25:51 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	return (0);
 }
 
-/*void	ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	while (*str)
 	{
@@ -37,7 +37,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		str++;
 	}
 }
-
+/*
 int	main(void)
 {
 	char	s1[20];
