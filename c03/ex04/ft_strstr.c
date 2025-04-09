@@ -6,7 +6,7 @@
 /*   By: olstokes <olstokes@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 10:21:14 by olstokes          #+#    #+#             */
-/*   Updated: 2025/04/09 12:29:23 by olstokes         ###   ########.fr       */
+/*   Updated: 2025/04/09 16:56:50 by olstokes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	ft_putstr(char *str)
 
 int	main(void)
 {
-	char	str[30] = "the end of the end";
+	char	str[30] = "the start the end";
 	char	to_find[20] = "the start";
 	char	*result;
 
